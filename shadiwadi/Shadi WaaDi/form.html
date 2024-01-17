@@ -1,0 +1,134 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Login Form</title> 
+	<style>
+body { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	font-family: sans-serif; 
+	background-image: url(pics/bg.jpeg);
+} 
+
+.main { 
+	background-color: #fff; 
+	border-radius: 15px; 
+	padding: 10px 20px; 
+	width: 500px; 
+	text-align: center; 
+    border: 1px solid;
+} 
+
+h1 { 
+	color: blueviolet; 
+} 
+
+label { 
+	display: block; 
+	width: 100%; 
+	margin-top: 10px; 
+	margin-bottom: 5px; 
+	text-align: left; 
+	color: black; 
+	font-weight: bold; 
+} 
+
+
+input { 
+	display: block; 
+	width: 100%; 
+	margin-bottom: 15px; 
+	padding: 10px; 
+	box-sizing: border-box; 
+	border: 1px solid #ddd ; 
+	border-radius: 5px; 
+} 
+
+select { 
+	display: block; 
+	width: 100%; 
+	margin-bottom: 15px; 
+	padding: 10px; 
+	box-sizing: border-box; 
+	border: 1px solid #ddd; 
+	border-radius: 5px; 
+} 
+
+button { 
+	padding: 15px; 
+	border-radius: 10px; 
+	margin-top: 15px; 
+	margin-bottom: 15px; 
+	border: none; 
+	color: white; 
+	cursor: pointer; 
+	background-color: blueviolet; 
+	width: 100%; 
+	font-size: 16px; 
+} 
+
+.Submit { 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+}
+
+    </style>
+</head> 
+
+<body> 
+	<div class="main"> 
+		<h1>Login Form</h1> 
+		<form action=""> 
+			<label for="first">First Name:</label> 
+			<input type="text" id="first"
+				name="first"
+				placeholder="Enter your first name" required> 
+
+			<label for="last">Last Name:</label> 
+			<input type="text" id="last"
+				name="last"
+				placeholder="Enter your last name" required> 
+
+			<label for="email">Email:</label> 
+			<input type="email" id="email"
+				name="email"
+				placeholder="Enter your email" required> 
+
+			<label for="password">Password:</label> 
+			<input type="password" id="password"
+				name="password"
+				placeholder="Enter your password"> 
+
+			<label for="repassword">Re-type Password:</label> 
+			<input type="password" id="repassword"
+				name="repassword"
+				placeholder="Re-Enter your password" required> 
+
+			<label for="mobile">Contact:</label> 
+			<input type="text" id="mobile"
+				name="mobile"
+				placeholder="Enter your Mobile Number" required 
+				maxlength="11"> 
+
+
+            <label for="Select Course">Select Event:</label> 
+			<select id="gender" name="gender" required> 
+                <option value="Select Your Event" hidden >Select Your Event</option> 
+				<option value="BBA">Mehndi</option> 
+				<option value="B.com">Barat</option> 
+				<option value="CS">Dholki</option> 
+                <option value="ACCA">Private Party</option> 
+                <option value="ADC">Birthday Party</option> 
+			</select> 
+
+			<div class="Submit"> 
+				<button type="submit"> 
+				Submit 
+				</button> 
+			</div> 
+		</form> 
+	</div> 
+</body> 
+</html>
